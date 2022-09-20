@@ -1,0 +1,91 @@
+/* header start */
+header.backImage {
+    background-image: url("../img/header.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+header.backImage .backImage_sub {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+header.backImage .backImage_heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+/* navigation start */
+#mainNavbar {
+    background-color: #212529;
+}
+
+#mainNavbar .navbar-brand {
+    letter-spacing: 0.063em;
+    font-weight: 700;
+    color: #de3545;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mainNavbar .navbar-nav .nav-item .nav-link {
+    color: #212529;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-right: 1.5rem;
+    letter-spacing: 0.06em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mainNavbar .navbar-nav .nav-item .nav-link:active,
+#mainNavbar .navbar-nav .nav-item .nav-link:hover {
+    color: #de3545;
+}
+
+/* @media xs,sm,md,lg start*/
+@media(max-width:991.98px) {
+    header.backImage {
+        padding-top: 11rem;
+        padding-bottom: 13rem;
+    }
+
+    header.backImage .backImage_heading {
+        font-size: 1.8rem;
+    }
+}
+
+/* @media xl,xxl start*/
+@media(min-width:992px) {
+    header.backImage {
+        padding-top: 13rem;
+        padding-bottom: 15rem;
+    }
+
+    #mainNavbar {
+        background-color: transparent;
+    }
+
+    #mainNavbar .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    #mainNavbar .navbar-nav .nav-item .nav-link {
+        color: #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-right: 1.5rem;
+        letter-spacing: 0.06em;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #mainNavbar .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    #mainNavbar.navbar-mobile {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: #212529;
+    }
+}
