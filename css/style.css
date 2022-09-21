@@ -43,6 +43,14 @@ header.backImage .backImage_heading {
     color: #de3545;
 }
 
+/* services start */
+#services h3.services_sub {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* services end */
+
+
 /* @media xs,sm,md,lg start*/
 @media(max-width:991.98px) {
     header.backImage {
