@@ -20,8 +20,8 @@
 
 <body id="page-body">
     <!-- navigation start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
-        <div class="container py-1 py-lg-3">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-1 py-lg-3" id="mainNavbar">
+        <div class="container">
             <a class="navbar-brand text-uppercase" href="#page-body">
                 new desıgn
             </a>
@@ -36,21 +36,21 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto text-uppercase">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#Servisler">Servisler</a>
+                            <a class="nav-link" aria-current="page" href="#services">Servisler</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Portföy">Portföy</a>
+                            <a class="nav-link" href="#portfolio">Portföy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Hakkımızda">Hakkımızda</a>
+                            <a class="nav-link" href="#about">Hakkımızda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Ekip">Ekip</a>
+                            <a class="nav-link" href="#team">Ekip</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#İletişim">İletişim</a>
+                            <a class="nav-link" href="#contact">İletişim</a>
                         </li>
                     </ul>
                 </div>
@@ -62,12 +62,69 @@
     <!-- header start -->
     <header class="backImage text-center text-white">
         <div class="container">
-            <div class="backImage_sub fst-italic fs-4 lh-lg mb-2 mb-lg-3">Sitemize Hoş Geldiniz!</div>
-            <div class="backImage_heading text-uppercase fw-bolder mb-4 lh-1">Tanıştığımıza Memnun Olduk</div>
-            <a href="#servisler" class="btn btn-danger btn-lg p-lg-4 fw-bolder text-uppercase">Daha Fazla Anlat</a>
+            <div class="backImage_sub fst-italic fs-4 lh-lg mb-2 mb-lg-3">
+                Sitemize Hoş Geldiniz!
+            </div>
+            <div class="backImage_heading text-uppercase fw-bolder mb-4 lh-1">
+                Tanıştığımıza Memnun Olduk
+            </div>
+            <a href="#services" class="btn btn-danger btn-lg p-lg-4 fw-bolder text-uppercase">
+                Daha Fazla Anlat
+            </a>
         </div>
     </header>
     <!-- header end -->
+
+    <!-- services start -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="services_heading text-uppercase fs-1 fw-bold">Servisler</h2>
+                <h3 class="services_sub text-muted fs-6 fst-italic mt-3 fw-bold">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Esse, corrupti.</h3>
+            </div>
+        </div>
+        <div class="row text-center px-5">
+            <div class="col-md-4">
+                <div class="rounded-circle bg-danger d-flex justify-content-center align-items-center m-auto"
+                    style="width: 8rem; height: 8rem;">
+                    <i class="bi bi-cart text-white" style="font-size: 4.5rem;"></i>
+                </div>
+                <h4 class="my-4 fw-bold">E-Ticaret</h4>
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, officia inventore
+                    autem odit iure eum perspiciatis ducimus asperiores a, recusandae quos voluptas quae illum neque at
+                    itaque ut magnam optio.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="rounded-circle bg-danger d-flex justify-content-center align-items-center m-auto"
+                    style="width: 8rem; height: 8rem;">
+                    <i class="bi bi-laptop text-white" style="font-size: 4.5rem;"></i>
+                </div>
+                <h4 class="my-4 fw-bold">Duyarlı Tasarım</h4>
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, officia inventore
+                    autem odit iure eum perspiciatis ducimus asperiores a, recusandae quos voluptas quae illum neque at
+                    itaque ut magnam optio.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="rounded-circle bg-danger d-flex justify-content-center align-items-center m-auto"
+                    style="width: 8rem; height: 8rem;">
+                    <i class="bi bi-shield-lock text-white" style="font-size: 4.5rem;"></i>
+                </div>
+                <h4 class="my-4 fw-bold">Web Güvenliği</h4>
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, officia inventore
+                    autem odit iure eum perspiciatis ducimus asperiores a, recusandae quos voluptas quae illum neque at
+                    itaque ut magnam optio.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- services end -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
