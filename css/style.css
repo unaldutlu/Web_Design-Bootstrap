@@ -46,6 +46,9 @@ header.backImage .backImage_heading {
 #mainNavbar .navbar-nav .nav-item .nav-link:hover {
     color: #de3545;
 }
+.link_heading {
+    margin-top: 1.4rem;
+}
 
 /* services start */
 #services h3.services_sub {
@@ -66,7 +69,11 @@ header.backImage .backImage_heading {
 #portfolio .p-link:hover .p-hover {
     opacity: 1;
 }
-
+/* modal start */
+.pmodalp {
+    text-align: justify;
+    text-indent: 25px;
+}
 
 /* @media xs,sm,md,lg start*/
 @media(max-width:991.98px) {
