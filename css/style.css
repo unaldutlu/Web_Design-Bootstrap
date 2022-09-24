@@ -52,7 +52,7 @@ header.backImage .backImage_heading {
 }
 
 /* services start */
-#services h3.services_sub {
+.heading_sub {
     font-family: 'Roboto Slab', serif;
 }
 
@@ -238,6 +238,47 @@ header.backImage .backImage_heading {
 
     .timeline>li.t-inverted>.t-panel {
         padding: 0 40px 20px 20px;
+    }
+}
+/* contact start */
+#contact {
+    background-color: #432630;
+    background-repeat: no-repeat;
+    background-image: url("../../img/map.png");
+    background-position: center;
+}
+
+#contact input {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+
+#contact .form-textarea {
+    height: 91.5%;
+}
+
+#contact .form-textarea textarea {
+    height: 100%;
+    min-height: 10rem;
+}
+
+#contact .form-control:focus {
+    box-shadow: 1px 1px 12px #d8df0b;
+}
+
+/* @media xs,sm,md,lg start*/
+@media(max-width:991.98px) {
+    header.backImage {
+        padding-top: 11rem;
+        padding-bottom: 13rem;
+    }
+
+    header.backImage .backImage_heading {
+        font-size: 1.8rem;
+    }
+
+    #mainNavbar .navbar-nav .nav-item .nav-link {
+        color: #212529;
     }
 }
 

@@ -47,9 +47,6 @@
                             <a class="nav-link btn-close-canvas" href="#about">Hakkımızda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-close-canvas" href="#team">Ekip</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link btn-close-canvas" href="#contact">İletişim</a>
                         </li>
                     </ul>
@@ -80,7 +77,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="link_heading text-uppercase fs-1 fw-bold">Servisler</h2>
-                <h3 class="services_sub text-muted fs-6 fst-italic mt-3 fw-bold">Lorem ipsum dolor sit amet consectetur
+                <h3 class="heading_sub text-muted fs-6 fst-italic mt-3 fw-bold">Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Esse, corrupti.</h3>
             </div>
             <div class="row text-center px-5">
@@ -133,7 +130,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="link_heading text-uppercase fs-1 fw-bold">Portföy</h2>
-                <h3 class="services_sub text-muted fs-6 fst-italic mt-3 fw-bold">
+                <h3 class="heading_sub text-muted fs-6 fst-italic mt-3 fw-bold">
                     Lorem ipsum dolor sit amet consectetur
                     adipisicing elit.
                 </h3>
@@ -422,7 +419,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="link_heading text-uppercase fs-1 fw-bold">Hakkımızda</h2>
-                <h3 class="services_sub text-muted fs-6 fst-italic mt-3 fw-bold">
+                <h3 class="heading_sub text-muted fs-6 fst-italic mt-3 fw-bold">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, labore suscipit?
                 </h3>
             </div>
@@ -437,7 +434,8 @@
                             <h4 class="t-subheading">Mütevazı Başlangıcımız</h4>
                         </div>
                         <div class="t-body">
-                            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam necessitatibus quo
+                            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+                                necessitatibus quo
                                 nobis, sit non ipsam qui natus culpa voluptatibus, harum vero dolorem aliquid, provident
                                 eius excepturi commodi ipsum! At, aperiam.</p>
                         </div>
@@ -453,7 +451,8 @@
                             <h4 class="t-subheading">Mütevazı Başlangıcımız</h4>
                         </div>
                         <div class="t-body">
-                            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam necessitatibus quo
+                            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+                                necessitatibus quo
                                 nobis, sit non ipsam qui natus culpa voluptatibus, harum vero dolorem aliquid, provident
                                 eius excepturi commodi ipsum! At, aperiam.</p>
                         </div>
@@ -469,7 +468,8 @@
                             <h4 class="t-subheading">Mütevazı Başlangıcımız</h4>
                         </div>
                         <div class="t-body">
-                            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam necessitatibus quo
+                            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+                                necessitatibus quo
                                 nobis, sit non ipsam qui natus culpa voluptatibus, harum vero dolorem aliquid, provident
                                 eius excepturi commodi ipsum! At, aperiam.</p>
                         </div>
@@ -484,6 +484,51 @@
     </section>
     <!-- about end -->
 
+    <!-- contact start -->
+    <section id="contact" class="pt-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="link_heading text-uppercase fs-1 fw-bold text-white">İletişim</h2>
+                <h3 class="heading_sub text-white fs-6 fst-italic mt-3 fw-bold">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, labore suscipit?
+                </h3>
+            </div>
+            <form id="FrmContact" novalidate>
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-4">
+                            <input type="text" id="name" class="form-control" placeholder="Adınız" required>
+                            <label for="name">Adınız</label>
+                            <div class="invalid-feedback" id="ErrName"></div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="email" id="email" class="form-control" placeholder="E-posta" required>
+                            <label for="email">E-posta Adresiniz</label>
+                            <div class="invalid-feedback" id="ErrEmail"></div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="tel" id="phone" class="form-control" placeholder="Telefon Numaranız" required>
+                            <label for="phone">Telefon Numaranız</label>
+                            <div class="invalid-feedback" id="ErrPhone"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating form-textarea mb-md-0">
+                            <textarea id="message" class="form-control" placeholder="Mesajınız" required></textarea>
+                            <label for="message">Mesajınız</label>
+                            <div class="invalid-feedback" id="ErrMessage"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-danger btn-lg text-uppercase py-3">
+                        Mesaj Gönder
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- contact end -->
 
 
 
