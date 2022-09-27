@@ -151,6 +151,9 @@ header.backImage .backImage_heading {
 .timeline .t-body>p {
     margin-bottom: 0;
 }
+.timeline>li:last-child{
+    margin-bottom: 7rem;
+}
 
 @media(min-width:768px) {
     .timeline:before {
