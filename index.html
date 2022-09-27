@@ -493,35 +493,56 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, labore suscipit?
                 </h3>
             </div>
-            <form id="FrmContact" novalidate>
+            <form class="needs-validation" action="#contact" id="FrmContact" novalidate>
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-floating mb-4">
-                            <input type="text" id="name" class="form-control" placeholder="Adınız" required>
-                            <label for="name">Adınız</label>
-                            <div class="invalid-feedback" id="ErrName"></div>
+                            <input type="text" id="name" class="form-control" placeholder="Adınız" required
+                                maxlength="40" aria-describedby="ErrName">
+                            <label for="name">Adınız
+                                <span class="text-danger" aria-hidden="true">*</span>
+                                <span class="visually-hidden">zorunlu alan</span>
+                            </label>
+                            <div class="invalid-feedback fst-italic fs-6" id="ErrName"></div>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="email" id="email" class="form-control" placeholder="Eposta" required>
-                            <label for="email">Eposta Adresiniz</label>
-                            <div class="invalid-feedback" id="ErrEmail"></div>
+                            <input type="email" id="email" class="form-control" placeholder="Eposta" required
+                                maxlength="100" aria-describedby="ErrEmail">
+                            <label for="email">Eposta Adresiniz
+                                <span class="text-danger" aria-hidden="true">*</span>
+                                <span class="visually-hidden">zorunlu alan</span>
+                            </label>
+                            <div class="invalid-feedback fst-italic fs-6" id="ErrEmail"></div>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="tel" id="phone" class="form-control" placeholder="Telefon Numaranız" required>
-                            <label for="phone">Telefon Numaranız</label>
-                            <div class="invalid-feedback" id="ErrPhone"></div>
+                            <input type="tel" id="phone" class="form-control" placeholder="Telefon Numaranız" required
+                                maxlength="15" aria-describedby="ErrPhone">
+                            <label for="phone">Telefon Numaranız
+                                <span class="text-danger" aria-hidden="true">*</span>
+                                <span class="visually-hidden">zorunlu alan</span>
+                            </label>
+                            <div class="invalid-feedback fst-italic fs-6" id="ErrPhone"></div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating form-textarea mb-md-0">
-                            <textarea id="message" class="form-control" placeholder="Mesajınız" required></textarea>
-                            <label for="message">Mesajınız</label>
-                            <div class="invalid-feedback" id="ErrMessage"></div>
+                            <textarea id="message" class="form-control" placeholder="Mesajınız" required maxlength="300"
+                                aria-describedby="ErrMessage"></textarea>
+                            <label for="message">Mesajınız
+                                <span class="text-danger" aria-hidden="true">*</span>
+                                <span class="visually-hidden">zorunlu alan</span>
+                            </label>
+                            <div class="invalid-feedback fst-italic fs-6" id="ErrMessage"></div>
+                        </div>
+                        <div class="text-white text-end">
+                            <span id="current-character">0</span>
+                            <span> / 300</span>
                         </div>
                     </div>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-danger btn-lg text-uppercase py-3">
+                    <button type="submit" class="btn btn-danger btn-lg text-uppercase py-3 d-block w-100"
+                        id="BtnContact">
                         Mesaj Gönder
                     </button>
                 </div>
@@ -533,20 +554,26 @@
     <!-- footer start -->
     <footer class="bg-light">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex align-items-baseline">
                 <div class="col-md-4 text-muted text-center text-lg-start py-2 py-md-3">
                     Copyright &copy; New Design 2022
                 </div>
                 <div class="col-md-4 text-center py-2 py-md-3">
-                    <a href="#" class="mx-2 btn btn-info"><i class="bi bi-twitter"></i></i></a>
-                    <a href="#" class="mx-2 btn btn-primary"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="mx-2 btn btn-danger"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="mx-2 btn btn-info rounded-4 text-white">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#" class="mx-2 btn btn-primary rounded-4">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="mx-2 btn btn-danger rounded-4">
+                        <i class="bi bi-instagram"></i>
+                    </a>
                 </div>
                 <div class="col-md-4 py-2 py-md-3 text-center text-lg-end">
-                    <a href="#" class="me-2 text-decoration-none">
+                    <a href="#liveToastBtn" class="mx-2 f-hover fst-italic" id="liveToastBtn">
                         Gizlilik Politikası
                     </a>
-                    <a href="#" class="text-decoration-none">
+                    <a href="#" class="fst-italic f-hover">
                         Ana Sayfa
                     </a>
                 </div>
@@ -554,6 +581,21 @@
         </div>
     </footer>
     <!-- footer end -->
+
+    <!-- footer toast start -->
+    <div class="toast-container position-fixed bottom-0 end-0">
+        <div id="liveToast" class="toast bg-info" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Gizlilik Politikası</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Güvenliğiniz bizim için çok önemli...
+            </div>
+        </div>
+    </div>
+    <!-- footer modal start -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">

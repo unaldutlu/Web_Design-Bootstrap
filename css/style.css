@@ -243,6 +243,21 @@ header.backImage .backImage_heading {
         padding: 0 40px 20px 20px;
     }
 }
+/* footer start */
+.f-hover{
+    text-decoration: none;
+}
+.f-hover:hover{
+    text-decoration: underline;
+}
+#liveToastBtn{
+    border: none;
+}
+.toast-container{
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+}
+
 /* contact start */
 #contact {
     background-color: #432630;
