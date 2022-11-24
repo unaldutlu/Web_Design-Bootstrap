@@ -3,7 +3,7 @@ Web Design(Bootstrap-5)
 
 Live Link: 
  
-https://unaldutlu.github.io/Project-3-Web_Design-Bootstrap/
+https://unaldutlu.github.io/Web_Design-Bootstrap/
  
  
  
